@@ -1,0 +1,53 @@
+{
+  "pipeline": "DEM Preprocessing",
+  "source": "SRTM GL1 (OpenTopography)",
+  "crs_input": "EPSG:4326 (WGS84)",
+  "crs_output": "EPSG:32651 (UTM Zone 51N)",
+  "void_fill_method": "nearest_neighbor (scipy distance_transform_edt)",
+  "resample_method": "bilinear",
+  "resolutions": {
+    "30m": {
+      "resolution_m": 30,
+      "width_px": 2855,
+      "height_px": 4447,
+      "domain_width_km": 85.65,
+      "domain_height_km": 133.41
+    },
+    "50m": {
+      "resolution_m": 50,
+      "width_px": 1713,
+      "height_px": 2668,
+      "domain_width_km": 85.65,
+      "domain_height_km": 133.4
+    },
+    "100m": {
+      "resolution_m": 100,
+      "width_px": 857,
+      "height_px": 1334,
+      "domain_width_km": 85.7,
+      "domain_height_km": 133.4
+    },
+    "200m": {
+      "resolution_m": 200,
+      "width_px": 429,
+      "height_px": 667,
+      "domain_width_km": 85.8,
+      "domain_height_km": 133.4
+    },
+    "500m": {
+      "resolution_m": 500,
+      "width_px": 172,
+      "height_px": 267,
+      "domain_width_km": 86.0,
+      "domain_height_km": 133.5
+    }
+  },
+  "slope_stats_100m": {
+    "Sox_min": -1.8384454250335693,
+    "Sox_max": 1.254520297050476,
+    "Sox_mean": -0.0010698246769607067,
+    "Soy_min": -1.2192397117614746,
+    "Soy_max": 1.2687695026397705,
+    "Soy_mean": 0.002577579114586115
+  }
+}
