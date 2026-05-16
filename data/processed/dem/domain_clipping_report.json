@@ -1,0 +1,76 @@
+{
+  "pipeline": "Domain Clipping",
+  "domain_wgs84": {
+    "west": 121.55,
+    "east": 122.0,
+    "south": 17.55,
+    "north": 18.45
+  },
+  "crs_output": "EPSG:32651 (UTM Zone 51N)",
+  "resolutions": {
+    "30m": {
+      "resolution_m": 30,
+      "width_px": 1612,
+      "height_px": 3332,
+      "domain_width_km": 48.4,
+      "domain_height_km": 100.0,
+      "elev_min_m": 0.0,
+      "elev_max_m": 1510.91,
+      "elev_mean_m": 104.53,
+      "total_pixels": 5371184
+    },
+    "50m": {
+      "resolution_m": 50,
+      "width_px": 967,
+      "height_px": 1999,
+      "domain_width_km": 48.4,
+      "domain_height_km": 100.0,
+      "elev_min_m": 0.0,
+      "elev_max_m": 1498.66,
+      "elev_mean_m": 104.52,
+      "total_pixels": 1933033
+    },
+    "100m": {
+      "resolution_m": 100,
+      "width_px": 484,
+      "height_px": 1000,
+      "domain_width_km": 48.4,
+      "domain_height_km": 100.0,
+      "elev_min_m": 0.0,
+      "elev_max_m": 1490.37,
+      "elev_mean_m": 104.59,
+      "total_pixels": 484000
+    },
+    "200m": {
+      "resolution_m": 200,
+      "width_px": 242,
+      "height_px": 500,
+      "domain_width_km": 48.4,
+      "domain_height_km": 100.0,
+      "elev_min_m": 0.0,
+      "elev_max_m": 1444.39,
+      "elev_mean_m": 104.39,
+      "total_pixels": 121000
+    },
+    "500m": {
+      "resolution_m": 500,
+      "width_px": 97,
+      "height_px": 200,
+      "domain_width_km": 48.5,
+      "domain_height_km": 100.0,
+      "elev_min_m": 0.0,
+      "elev_max_m": 1375.47,
+      "elev_mean_m": 105.27,
+      "total_pixels": 19400
+    }
+  },
+  "slope_stats": {
+    "Sox_min": -1.593432,
+    "Sox_max": 7.451826,
+    "Sox_mean": 3.2e-05,
+    "Soy_min": -12.417883,
+    "Soy_max": 1.179303,
+    "Soy_mean": -0.000946
+  },
+  "notes": "Domain clipped to lower Cagayan floodplain. Negative elevations clamped to 0.0m (coastal artifacts). Mountain terrain excluded above domain bounds."
+}
